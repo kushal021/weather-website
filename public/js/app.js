@@ -32,7 +32,7 @@ form.addEventListener('submit', (e)=>{
     msgOne.textContent = 'Loading...'
     msgTwo.textContent = ''
     const location = search.value;
-    const url = 'http://localhost:2000/weather?address='+location;
+    const url = '/weather?address='+location;
     fetch(url).then((response)=>{
     response.json().then((data)=>{
         if (data.error) {

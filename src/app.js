@@ -6,6 +6,7 @@ const {dy, dt} = require('./utils/day')
 const bodyParser = require('body-parser')
 
 const app = express()
+const port = process.env.PORT || 2000;
 
 
 // Setting up path
@@ -60,6 +61,6 @@ app.post('', (req, res)=>{
 
 
 
-app.listen(2000, ()=>{
-    console.log('Server is listening on 2000');
+app.listen(port, ()=>{
+    console.log('Server is listening on ' + port);
 })
