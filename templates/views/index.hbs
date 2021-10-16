@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Weather App</title>
+    <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+   <link rel="stylesheet" href="css/styles.css">
+   <script src="/js/app.js"></script>
+   <link rel="shortcut icon" href="#">
+  </head>
+  <body>
+    <div class="hero">
+
+
+    <div class="container" data-bg-image="../images/banner.png">
+
+
+    					<form action="/" class="find-location" method="post">
+    						<input type="text"  name="inp" placeholder="Find your location...">
+    						<button type="submit" name="button">Find</button>
+    					</form>
+
+    				</div>
+          </div>
+            <div class="forecast-table">
+				<div class="container">
+					<div class="forecast-container">
+						<div class="today forecast">
+							<div class="forecast-header">
+								<div class="day">{{dt}}</div>
+								<div class="date"> {{dy}}</div>
+							</div> <!-- .forecast-header -->
+							<div class="forecast-content">
+								<div class="location">{{city}}</div>
+								<div class="degree">
+							<div class="num"> {{tm}} <sup>o</sup>C</div>
+									<div class="forecast-icon">
+										<img src={{mainImg}} alt="" width=100>
+									</div>
+								</div>
+								<span><img src="images/icon-umberella.png" alt="">{{hm}}%</span>
+								<span><img src="images/icon-wind.png" alt="">{{ws}}km/h</span>
+								<span><img src="images/icon-compass.png" alt="">{{ps}}mBar</span>
+                <span> <img src="images/arrow-gray1.png" alt="">{{ds}}</span>
+							</div>
+						</div>
+  </body>
+</html>
